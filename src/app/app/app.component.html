@@ -1,0 +1,7 @@
+<my-actions
+  [selected]="layoutRef.selected"
+  [(columns)]="layoutRef.columns"
+  (reset)="onReset()"
+  (delete)="layoutRef.delete()"
+></my-actions>
+<my-layout #layoutRef [data]="data"></my-layout>

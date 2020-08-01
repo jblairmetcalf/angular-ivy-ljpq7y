@@ -1,0 +1,10 @@
+<button
+  *ngFor="let item of items"
+  (click)="columns = item"
+  [disabled]="columns === item"
+>{{item}}</button>
+<button
+  [disabled]="!selected"
+  (click)="delete.emit()"
+>Delete ({{selected}})</button>
+<button (click)="reset.emit()">Reset</button>
