@@ -1,5 +1,7 @@
 <button
   *ngFor="let item of items"
+  mat-raised-button
+  color="primary"
   (click)="columns = item"
   [disabled]="columns === item"
 >{{item}}</button>
