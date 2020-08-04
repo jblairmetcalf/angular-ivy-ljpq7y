@@ -4,6 +4,8 @@ import { LayoutComponent } from '../layout/layout.component';
 
 import { DATA } from './app.data';
 
+import { cloneObject } from '../utilities';
+
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',
@@ -19,12 +21,7 @@ export class AppComponent implements OnInit {
   }
 
   public setData() {
-    this.data = this.close(DATA);
-  }
-
-  // Make this a utility
-  private close(obj) {
-    return JSON.parse(JSON.stringify(obj));
+    this.data = cloneObject(DATA);
   }
 
   public onReset() {

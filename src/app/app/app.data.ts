@@ -1,4 +1,6 @@
-export const DATA = [
+import { IUser } from '../interfaces';
+
+export const DATA: IUser[] = [
   {
     header: "Tushar Gupta",
     body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
