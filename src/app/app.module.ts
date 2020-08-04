@@ -7,7 +7,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { CardComponent } from './card/card.component';
 import { ModalComponent } from './modal/modal.component';
 import { ActionsComponent } from './actions/actions.component';
-import { SidePanelHeaderDirective } from './button.directive';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
@@ -16,7 +16,8 @@ import { SidePanelHeaderDirective } from './button.directive';
     LayoutComponent,
     CardComponent,
     ModalComponent,
-    ActionsComponent
+    ActionsComponent,
+    HighlightDirective
   ],
   bootstrap: [AppComponent]
 })
