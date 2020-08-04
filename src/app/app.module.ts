@@ -7,6 +7,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { CardComponent } from './card/card.component';
 import { ModalComponent } from './modal/modal.component';
 import { ActionsComponent } from './actions/actions.component';
+
 import { HighlightDirective } from './directives';
 import { UppercasePipe } from './pipes';
 
