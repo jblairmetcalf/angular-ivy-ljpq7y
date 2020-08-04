@@ -1,5 +1,8 @@
+$width: 200px;
+
 :host {
-  min-width: 200px;
+  min-width: $width;
+  max-width: $width;
   border-left: solid rgba(black, 0.12) 1px;
 
   &:not(.opened) {
