@@ -1,6 +1,7 @@
 <my-actions
   [selected]="layoutRef.selected"
   [(columns)]="layoutRef.columns"
+  [(inforPanelOpened)]="layoutRef.columns"
   (reset)="onReset()"
   (delete)="layoutRef.delete()"
 ></my-actions>

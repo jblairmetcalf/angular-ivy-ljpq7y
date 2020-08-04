@@ -9,6 +9,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { CardComponent } from './card/card.component';
 import { ModalComponent } from './modal/modal.component';
 import { ActionsComponent } from './actions/actions.component';
+import { InfoPanelComponent } from './info-panel/info-panel.component';
 
 import { HighlightDirective } from './directives';
 import { UppercasePipe } from './pipes';
@@ -21,6 +22,7 @@ import { UppercasePipe } from './pipes';
     CardComponent,
     ModalComponent,
     ActionsComponent,
+    InfoPanelComponent,
     HighlightDirective,
     UppercasePipe
   ],

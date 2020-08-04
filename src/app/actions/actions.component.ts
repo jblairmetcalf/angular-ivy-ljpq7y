@@ -12,6 +12,7 @@ import {
 })
 export class ActionsComponent  {
   private _columns;
+  private _infoPanelOpened;
 
   public items = [1, 2, 3, 4, 5];
 
@@ -26,7 +27,16 @@ export class ActionsComponent  {
     this.columnsChange.emit(value);
   }
 
+  public get infoPanelOpened() {
+    return this._infoPanelOpened;
+  }
+  public set infoPanelOpened(value) {
+    this._infoPanelOpened = value;
+    this.infoPanelOpenedChange.emit(value);
+  }
+
   @Output() columnsChange = new EventEmitter<number>();
+  @Output() infoPanelOpenedChange = new EventEmitter<boolean>();
   @Output() reset = new EventEmitter();
   @Output() delete = new EventEmitter();
 }
