@@ -1,8 +1,11 @@
-<my-actions
-  [selected]="layoutRef.selected"
-  [(columns)]="layoutRef.columns"
-  [(inforPanelOpened)]="layoutRef.columns"
-  (reset)="onReset()"
-  (delete)="layoutRef.delete()"
-></my-actions>
-<my-layout #layoutRef [data]="data"></my-layout>
+<div class="content">
+  <my-actions
+    #actionsRef
+    [selected]="layoutRef.selected"
+    [(columns)]="layoutRef.columns"
+    (reset)="onReset()"
+    (delete)="layoutRef.delete()"
+  ></my-actions>
+  <my-layout #layoutRef [data]="data"></my-layout>
+</div>
+<my-info-panel [opened]="actionsRef.infoPanelOpened"></my-info-panel>

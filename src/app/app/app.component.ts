@@ -1,3 +1,11 @@
+/*
+ * Abstracts
+ * Grid v List toggle
+ * Dropdown
+ * Icons
+ * Make sure works for mobile
+ */
+
 import { Component, ViewChild, ElementRef, OnInit } from '@angular/core';
 
 import { LayoutComponent } from '../layout/layout.component';

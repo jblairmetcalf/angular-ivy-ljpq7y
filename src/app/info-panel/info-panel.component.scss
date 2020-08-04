@@ -1,3 +1,8 @@
 :host {
-  border: solid red 1px;
+  min-width: 200px;
+  border-left: solid rgba(black, 0.12) 1px;
+
+  &:not(.opened) {
+    display: none;
+  }
 }
