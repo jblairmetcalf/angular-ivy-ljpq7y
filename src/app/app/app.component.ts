@@ -4,6 +4,7 @@ import { LayoutComponent } from '../layout/layout.component';
 
 import { DATA } from './app.data';
 
+import { IUser } from '../interfaces';
 import { cloneObject } from '../utilities';
 
 @Component({
@@ -12,7 +13,7 @@ import { cloneObject } from '../utilities';
   styleUrls: [ './app.component.scss' ]
 })
 export class AppComponent implements OnInit {
-  public data;
+  public data: IUser[];
 
   @ViewChild('layoutRef') private layoutRef: LayoutComponent;
 

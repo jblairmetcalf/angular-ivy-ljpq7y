@@ -7,7 +7,8 @@ import { LayoutComponent } from './layout/layout.component';
 import { CardComponent } from './card/card.component';
 import { ModalComponent } from './modal/modal.component';
 import { ActionsComponent } from './actions/actions.component';
-import { HighlightDirective } from './highlight.directive';
+import { HighlightDirective } from './directives';
+import { UppercasePipe } from './pipes';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
@@ -17,7 +18,8 @@ import { HighlightDirective } from './highlight.directive';
     CardComponent,
     ModalComponent,
     ActionsComponent,
-    HighlightDirective
+    HighlightDirective,
+    UppercasePipe
   ],
   bootstrap: [AppComponent]
 })

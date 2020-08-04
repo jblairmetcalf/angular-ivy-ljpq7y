@@ -6,6 +6,8 @@ import {
   EventEmitter
 } from '@angular/core';
 
+import { IUser } from '../interfaces';
+
 const COLUMNS_DEFAULT = 3;
 
 @Component({
@@ -14,7 +16,7 @@ const COLUMNS_DEFAULT = 3;
   styleUrls: [ './layout.component.scss' ]
 })
 export class LayoutComponent  {
-  private _data: any[]; // Make this an interface
+  private _data: IUser[];
   private _selected: string;
 
   public _columns = COLUMNS_DEFAULT;
