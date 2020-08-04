@@ -1,12 +1,17 @@
-<button
-  *ngFor="let item of items"
-  mat-raised-button
-  color="primary"
-  (click)="columns = item"
-  [disabled]="columns === item"
->{{item}}</button>
-<button
-  [disabled]="!selected"
-  (click)="delete.emit()"
->Delete ({{selected}})</button>
-<button (click)="reset.emit()">Reset</button>
+<div class="left">
+  <button
+    *ngFor="let item of items"
+    (click)="columns = item"
+    [disabled]="columns === item"
+  >{{item}}</button>
+  <button
+    [disabled]="!selected"
+    (click)="delete.emit()"
+  >Delete ({{selected}})</button>
+  <button
+    (click)="reset.emit()"
+  >Reset</button>
+</div>
+<div class="right">
+  <button>Open info panel</button>
+</div>
