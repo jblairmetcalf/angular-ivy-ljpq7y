@@ -45,7 +45,7 @@ export const DATA: IUser[] = [
   },
   {
     header: "Blerf Metclarf",
-    body: "How many blerfs could a Blerf blerf if a Blerf could blerf Blerf blerf?",
+    body: "How many blerfs could a Blerf blerf if a Blerf could blerf Blerf blerfs?",
     role: Role.UXEngineer,
     id: "seven"
   }
