@@ -8,7 +8,7 @@
 
 import { Component, ViewChild, ElementRef, OnInit } from '@angular/core';
 
-import { CardGridComponent } from '../card-grid/card-grid.component';
+import { ContentComponent } from '../content/content.component';
 
 import { DATA } from './app.data';
 
@@ -23,7 +23,7 @@ import { cloneObject } from '../utilities';
 export class AppComponent implements OnInit {
   public data: IUser[];
 
-  @ViewChild('cardGridRef') private _cardGridRef: CardGridComponent;
+  @ViewChild('contentRef') private _contentRef: ContentComponent;
 
   public ngOnInit(): void {
     this.setData();
@@ -35,6 +35,6 @@ export class AppComponent implements OnInit {
 
   public onReset() {
     this.setData();
-    this._cardGridRef.reset();
+    this._contentRef.reset();
   }
 }

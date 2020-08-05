@@ -11,11 +11,11 @@ import { IUser } from '../interfaces';
 const COLUMNS_DEFAULT = 3;
 
 @Component({
-  selector: 'my-card-grid',
-  templateUrl: './card-grid.component.html',
-  styleUrls: [ './card-grid.component.scss' ]
+  selector: 'my-content',
+  templateUrl: './content.component.html',
+  styleUrls: [ './content.component.scss' ]
 })
-export class CardGridComponent  {
+export class ContentComponent  {
   private _data: IUser[];
   private _selected: string;
 
