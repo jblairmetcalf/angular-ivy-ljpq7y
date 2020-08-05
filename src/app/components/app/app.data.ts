@@ -1,4 +1,4 @@
-import { IUser, Role } from '../interfaces';
+import { IUser, Role } from '../../interfaces';
 
 export const DATA: IUser[] = [
   {
