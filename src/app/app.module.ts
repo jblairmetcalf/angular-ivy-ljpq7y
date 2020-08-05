@@ -6,7 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 
 import { AppComponent } from './app/app.component';
-import { LayoutComponent } from './layout/layout.component';
+import { CardGridComponent } from './card-grid/card-grid.component';
 import { CardComponent } from './card/card.component';
 import { ModalComponent } from './modal/modal.component';
 import { ActionsComponent } from './actions/actions.component';
@@ -24,7 +24,7 @@ import { UppercasePipe } from './pipes';
   ],
   declarations: [
     AppComponent,
-    LayoutComponent,
+    CardGridComponent,
     CardComponent,
     ModalComponent,
     ActionsComponent,
