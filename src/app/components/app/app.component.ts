@@ -4,8 +4,8 @@ import { ContentComponent } from '../content/content.component';
 
 import { DATA } from './app.data';
 
-import { IUser } from '../interfaces';
-import { cloneObject } from '../utilities';
+import { IUser } from '../../interfaces';
+import { cloneObject } from '../../utilities';
 
 @Component({
   selector: 'my-app',

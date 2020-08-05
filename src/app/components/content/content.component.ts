@@ -6,7 +6,7 @@ import {
   EventEmitter
 } from '@angular/core';
 
-import { IUser } from '../interfaces';
+import { IUser } from '../../interfaces';
 
 const COLUMNS_DEFAULT = 3;
 
