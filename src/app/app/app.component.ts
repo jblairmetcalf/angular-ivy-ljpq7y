@@ -9,6 +9,7 @@
  * ngIf
  * Icons
  * Images
+ * Filter
  */
 
 /*
