@@ -1,4 +1,4 @@
-import { Pipe, PipeTransform } from '@angular/core';
+import { NgModule, Pipe, PipeTransform} from '@angular/core';
 
 @Pipe({name: 'uppercase'})
 export class UpperCasePipe implements PipeTransform {
@@ -14,7 +14,7 @@ export class LowerCasePipe implements PipeTransform {
   }
 }
 
-@Pipe({name: 'inyourfacecase'})
+@Pipe({name: 'testcase'})
 export class InYourFaceCasePipe implements PipeTransform {
   transform(value: string): string {
     let res = '';
@@ -24,8 +24,6 @@ export class InYourFaceCasePipe implements PipeTransform {
     return res;
   }
 }
-
-import { NgModule } from '@angular/core';
 
 @NgModule({
   declarations: [
