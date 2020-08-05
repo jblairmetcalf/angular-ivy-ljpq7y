@@ -40,3 +40,12 @@ p {
 button {
   cursor: pointer;
 }
+
+.my-highlight {
+  transition: background-color linear 0.166s;
+
+  &:hover {
+    cursor: text;
+    background-color: rgba(#3367d6, 0.1);
+  }
+}

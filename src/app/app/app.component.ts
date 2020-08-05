@@ -1,29 +1,3 @@
-/*
- * Abstracts
- * Panel
- * Grid v List toggle
- * Dropdown
- * Icons
- * Make sure works for mobile
- * Slots
- * ngIf
- * Icons
- * Images
- * Filter
- */
-
-/*
-<header>
-  <ng-content select=".header"></ng-content>
-</header>
-<main>
-  <ng-content select=".main"></ng-content>
-</main>
-<footer>
-  <ng-content select=".footer"></ng-content>
-</footer>
-*/
-
 import { Component, ViewChild, ElementRef, OnInit } from '@angular/core';
 
 import { ContentComponent } from '../content/content.component';
