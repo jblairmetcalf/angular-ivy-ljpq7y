@@ -32,7 +32,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { PipesModule } from './pipes/pipes.module';
 import { DirectivesModule } from './directives/directives.module';
-import { ComponentsModule, AppComponent } from './components/components.module';
+
+import { AppComponent } from './components/app/app.component';
+import { ContentComponent } from './components/content/content.component';
+import { CardComponent } from './components/card/card.component';
+import { ModalComponent } from './components/modal/modal.component';
+import { ActionsComponent } from './components/actions/actions.component';
+import { InfoPanelComponent } from './components/info-panel/info-panel.component';
 
 @NgModule({
   imports: [
@@ -41,11 +47,16 @@ import { ComponentsModule, AppComponent } from './components/components.module';
     BrowserAnimationsModule,
     MaterialModule,
     PipesModule,
-    DirectivesModule,
-    ComponentsModule
+    DirectivesModule
   ],
-  declarations: [AppComponent],
-  exports: [AppComponent],
+  declarations: [
+    AppComponent,
+    ContentComponent,
+    CardComponent,
+    ModalComponent,
+    ActionsComponent,
+    InfoPanelComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
