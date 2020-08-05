@@ -44,6 +44,8 @@ import { ComponentsModule, AppComponent } from './components/components.module';
     DirectivesModule,
     ComponentsModule
   ],
+  declarations: [AppComponent],
+  exports: [AppComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

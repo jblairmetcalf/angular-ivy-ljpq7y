@@ -23,6 +23,7 @@ import { InfoPanelComponent } from './info-panel/info-panel.component';
     ModalComponent,
     ActionsComponent,
     InfoPanelComponent
-  ]
+  ],
+  bootstrap: [AppComponent]
 })
 export class ComponentsModule {}
