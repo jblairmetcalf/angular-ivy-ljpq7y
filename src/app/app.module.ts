@@ -13,7 +13,7 @@ import { ActionsComponent } from './actions/actions.component';
 import { InfoPanelComponent } from './info-panel/info-panel.component';
 
 import { HighlightDirective } from './directives';
-import { UppercasePipe } from './pipes';
+import { UpperCasePipe, LowerCasePipe } from './pipes';
 
 @NgModule({
   imports: [
@@ -30,7 +30,8 @@ import { UppercasePipe } from './pipes';
     ActionsComponent,
     InfoPanelComponent,
     HighlightDirective,
-    UppercasePipe
+    UpperCasePipe,
+    LowerCasePipe
   ],
   bootstrap: [AppComponent]
 })
