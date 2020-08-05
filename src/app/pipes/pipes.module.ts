@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { UpperCasePipe, LowerCasePipe, InternetCasePipe } from './pipes.pipe';
 
 @NgModule({
-  exports: [
+  declarations: [
     UpperCasePipe,
     LowerCasePipe,
     InternetCasePipe
