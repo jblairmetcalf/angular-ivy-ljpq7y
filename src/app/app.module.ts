@@ -39,7 +39,7 @@ import { ActionsComponent } from './actions/actions.component';
 import { InfoPanelComponent } from './info-panel/info-panel.component';
 
 import { HighlightDirective } from './directives';
-import { PipeModule } from './pipes/pipes.module';
+import { PipesModule } from './pipes/pipes.module';
 
 @NgModule({
   imports: [
@@ -47,7 +47,7 @@ import { PipeModule } from './pipes/pipes.module';
     FormsModule,
     BrowserAnimationsModule,
     MaterialModule,
-    PipeModule
+    PipesModule
   ],
   declarations: [
     AppComponent,
