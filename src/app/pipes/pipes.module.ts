@@ -8,5 +8,10 @@ import { UpperCasePipe, LowerCasePipe, InternetCasePipe } from './pipes.pipe';
     LowerCasePipe,
     InternetCasePipe
   ],
+  exports: [
+    UpperCasePipe,
+    LowerCasePipe,
+    InternetCasePipe
+  ],
 })
 export class PipesModule {}

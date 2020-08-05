@@ -30,6 +30,8 @@ import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MaterialModule } from './material.module';
+import { PipesModule } from './pipes/pipes.module';
+import { DirectivesModule } from './directives/directives.module';
 
 import { AppComponent } from './app/app.component';
 import { ContentComponent } from './content/content.component';
@@ -38,8 +40,6 @@ import { ModalComponent } from './modal/modal.component';
 import { ActionsComponent } from './actions/actions.component';
 import { InfoPanelComponent } from './info-panel/info-panel.component';
 
-import { HighlightDirective } from './directives';
-import { PipesModule } from './pipes/pipes.module';
 
 @NgModule({
   imports: [
@@ -47,7 +47,8 @@ import { PipesModule } from './pipes/pipes.module';
     FormsModule,
     BrowserAnimationsModule,
     MaterialModule,
-    PipesModule
+    PipesModule,
+    DirectivesModule
   ],
   declarations: [
     AppComponent,
@@ -55,8 +56,7 @@ import { PipesModule } from './pipes/pipes.module';
     CardComponent,
     ModalComponent,
     ActionsComponent,
-    InfoPanelComponent,
-    HighlightDirective
+    InfoPanelComponent
   ],
   bootstrap: [AppComponent]
 })
