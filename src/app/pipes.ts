@@ -1,4 +1,4 @@
-import { NgModule, Pipe, PipeTransform} from '@angular/core';
+import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({name: 'uppercase'})
 export class UpperCasePipe implements PipeTransform {
@@ -14,22 +14,9 @@ export class LowerCasePipe implements PipeTransform {
   }
 }
 
-@Pipe({name: 'testcase'})
-export class InYourFaceCasePipe implements PipeTransform {
+@Pipe({name: 'internetcase'})
+export class InternetCasePipe implements PipeTransform {
   transform(value: string): string {
-    let res = '';
-    [...value].forEach((character, index) => {
-      res.concat(res, index % 2 ? character.toLowerCase() : character.toUpperCase());
-    });
-    return res;
+    return [...value].reduce((accumulator, character, index) => accumulator += index % 2 ? character.toLowerCase() : character.toUpperCase());
   }
 }
-
-@NgModule({
-  declarations: [
-    UpperCasePipe,
-    LowerCasePipe,
-    InYourFaceCasePipe
-  ],
-})
-export class PipesModule {}
