@@ -39,14 +39,15 @@ import { ActionsComponent } from './actions/actions.component';
 import { InfoPanelComponent } from './info-panel/info-panel.component';
 
 import { HighlightDirective } from './directives';
-import { UpperCasePipe, LowerCasePipe, InternetCasePipe } from './pipes';
+import { PipeModule } from './pipes/pipes.module';
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    PipeModule
   ],
   declarations: [
     AppComponent,
@@ -55,10 +56,7 @@ import { UpperCasePipe, LowerCasePipe, InternetCasePipe } from './pipes';
     ModalComponent,
     ActionsComponent,
     InfoPanelComponent,
-    HighlightDirective,
-    UpperCasePipe,
-    LowerCasePipe,
-    InternetCasePipe
+    HighlightDirective
   ],
   bootstrap: [AppComponent]
 })
