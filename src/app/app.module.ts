@@ -1,4 +1,5 @@
 /*
+ * Comment on each concept
  * Abstracts
  * Panel
  * Grid v List toggle
@@ -10,6 +11,7 @@
  * Icons
  * Images
  * Filter
+ * Components, interfaces, and utilities module?
  */
 
 /*
