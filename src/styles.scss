@@ -1,9 +1,9 @@
 /* Add application styles & imports to this file! */
 
-@import '@angular/material/prebuilt-themes/indigo-pink.css';
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons|Google+Material+Icons');
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons|Google+Material+Icons");
 
-@import './styles/reset.css';
+@import "./styles/reset.css";
 
 html,
 body {
@@ -21,7 +21,7 @@ h1,
 p,
 button {
   -webkit-font-smoothing: antialiased;
-  font-family: 'roboto';
+  font-family: "roboto";
   letter-spacing: normal;
 }
 
